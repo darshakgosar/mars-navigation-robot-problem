@@ -7,6 +7,8 @@ class MarsRobot {
         int plateauWidth = int.Parse(plateauSize[0]);
         int plateauHeight = int.Parse(plateauSize[1]);
 
+				if(plateauWidth != 0 && plateauHeight != 0){
+
         // Initialize robot position and direction
         int robotX = 1;
         int robotY = 1;
@@ -62,5 +64,8 @@ class MarsRobot {
 
         // Print the final position of the robot
         Console.WriteLine(robotX + "," + robotY + "," + robotDirection);
+				}else{
+        Console.WriteLine("No such position");
+				}
     }
 }
